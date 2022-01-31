@@ -1,0 +1,45 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3rem 1.7rem;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        max-width: 35rem;
+        height: 40rem;
+        background-image: url("../../assets/bg-tablet-pattern.svg");
+        background-repeat: no-repeat;
+        background-size: 125% auto;
+        background-position: calc(20% + 15vw) -16vh;
+        z-index: -10;
+    }
+
+    &__open-nav {
+        cursor: pointer;
+        display: none;
+        height: 1.2rem;
+
+        &--visible {
+            display: block;
+        }
+    }
+
+    &__close-nav {
+        cursor: pointer;
+        display: none;
+        height: 1.2rem;
+        z-index: 20;
+
+        &--visible {
+            display: block;
+        }
+    }
+}
