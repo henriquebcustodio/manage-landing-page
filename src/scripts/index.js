@@ -1,4 +1,4 @@
-import setNavToggle from "./modules/navToggle.js";
+import setNavToggle from "./modules/navToggle";
 
 const run = () => {
     setNavToggle();
