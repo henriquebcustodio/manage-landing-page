@@ -3,6 +3,21 @@
     height: auto;
     box-sizing: border-box;
     margin-top: 5rem;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 33rem;
+        right: 0;
+        width: 100%;
+        max-width: 18rem;
+        height: 40rem;
+        background-image: url("../../assets/bg-tablet-pattern.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 8rem 0;
+        z-index: -10;
+    }
 }
 
 .features-intro {

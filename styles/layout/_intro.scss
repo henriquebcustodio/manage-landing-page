@@ -8,6 +8,7 @@
 
     &__image {
         width: 100%;
+        max-width: 25rem;
         object-fit: cover;
     }
 }
