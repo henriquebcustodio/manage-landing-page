@@ -9,6 +9,9 @@ module.exports = merge(common, {
         filename: "[name].[contenthash].js",
         path: path.resolve(__dirname, "dist")
     },
+    devServer: {
+        watchFiles: ['./src']
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: "./src/index.html"
