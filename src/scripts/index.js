@@ -1,3 +1,7 @@
 import setNavToggle from "./modules/navToggle";
 
-setNavToggle();
+const run = () => {
+    setNavToggle();
+};
+
+export default run;
