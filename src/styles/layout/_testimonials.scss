@@ -1,0 +1,49 @@
+.testimonials {
+    text-align: center;
+
+    &__heading {
+        margin: 4rem 0;
+    }
+
+    &__carousel {
+        margin-bottom: 2.5rem;
+    }
+
+    &__bullet {
+        background-color: white;
+        box-shadow: none;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        border: 1px solid $bright-orange;
+        padding: 0;
+        margin: 0 1px;
+        transition: background-color 0.2s;
+
+        &--active {
+            background-color: $bright-orange;
+        }
+    }
+}
+
+.testimonial {
+    text-align: inherit;
+    background-color: $very-light-gray;
+    margin-top: 2.25rem;
+    margin-bottom: 1rem;
+    cursor: grab;
+
+    &:active {
+        cursor: grabbing;
+    }
+
+    &__avatar {
+        width: 4.5rem;
+        margin-top: -2.25rem;
+    }
+
+    &__text {
+        padding: 0 3rem;
+        margin-bottom: 2rem;
+    }
+}
