@@ -1,9 +1,9 @@
 import setNavToggle from "./modules/navToggle";
-import startSlider from "./modules/carousel";
+import startCarousel from "./modules/carousel";
 
 const run = () => {
     setNavToggle();
-    startSlider();
+    startCarousel();
 };
 
 export default run;

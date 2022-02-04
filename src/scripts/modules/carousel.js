@@ -16,7 +16,7 @@ const glideOptions = {
     }
 };
 
-const startSlider = () => {
+const startCarousel = () => {
 
     const carousel = new Glide('.testimonials__carousel', glideOptions);
 
@@ -31,4 +31,4 @@ const startSlider = () => {
 
 };
 
-export default startSlider;
+export default startCarousel;
