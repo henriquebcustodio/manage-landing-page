@@ -1,0 +1,30 @@
+.simplify {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+    height: 25rem;
+    background-color: $bright-orange;
+    background-image: url("/src/assets/bg-simplify-section-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 0 3rem;
+
+    &__heading {
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        margin: 0;
+    }
+
+    &__button {
+        background-color: white;
+        color: $bright-orange;
+        transition: color 200ms;
+
+        &:hover {
+            background-color: white;
+            color: $grayish-orange;
+        }
+    }
+}

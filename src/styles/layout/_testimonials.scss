@@ -27,11 +27,15 @@
 }
 
 .testimonial {
-    text-align: inherit;
+    text-align: center;
     background-color: $very-light-gray;
     margin-top: 2.25rem;
     margin-bottom: 1rem;
     cursor: grab;
+
+    // Overwriting glide__slide height: 100% so that
+    // all testimonials have the same height
+    height: auto !important;
 
     &:active {
         cursor: grabbing;
