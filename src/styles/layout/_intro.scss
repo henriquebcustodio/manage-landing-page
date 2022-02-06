@@ -11,22 +11,38 @@
         max-width: 25rem;
         object-fit: cover;
     }
+
+    @include tablet {
+        flex-direction: row-reverse;
+    }
 }
 
 .intro-main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 1rem;
 
     &__heading {
         text-align: center;
-        margin: 1rem;
+        margin: 1rem 0;
     }
 
     &__text {
-        margin: 0 1rem;
         margin-bottom: 2rem;
         text-align: center;
         line-height: 1.7rem;
+    }
+
+    @include tablet {
+        align-items: flex-start;
+
+        &__heading {
+            text-align: left;
+        }
+
+        &__text {
+            text-align: left;
+        }
     }
 }
