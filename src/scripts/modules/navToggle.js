@@ -18,6 +18,7 @@ const toggle = () => {
 const setNavToggle = () => {
     openNav.addEventListener('click', toggle);
     closeNav.addEventListener('click', toggle);
+    backdrop.addEventListener('click', toggle);
 };
 
 export default setNavToggle;
