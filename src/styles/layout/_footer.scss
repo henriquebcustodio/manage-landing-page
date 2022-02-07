@@ -58,6 +58,10 @@
         &:last-of-type {
             margin-bottom: 0;
         }
+
+        &:hover {
+            color: $bright-orange;
+        }
     }
 }
 
