@@ -1,5 +1,6 @@
 @import "typography";
 @import "colors";
+@import "breakpoints";
 
 body {
     margin: 0;
@@ -22,7 +23,7 @@ h2 {
 }
 
 h3 {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 p {

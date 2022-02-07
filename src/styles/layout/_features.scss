@@ -12,11 +12,19 @@
         width: 100%;
         max-width: 18rem;
         height: 40rem;
-        background-image: url("../../assets/bg-tablet-pattern.svg");
+        background-image: url("/src/assets/bg-tablet-pattern.svg");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: 8rem 0;
         z-index: -10;
+    }
+
+    @include tablet {
+        display: flex;
+
+        &::before {
+            display: none;
+        }
     }
 }
 
@@ -35,6 +43,18 @@
     &__text {
         text-align: center;
         margin: 0;
+    }
+
+    @include tablet {
+        align-items: flex-start;
+
+        &__heading {
+            text-align: left;
+        }
+
+        &__text {
+            text-align: left;
+        }
     }
 }
 
@@ -60,7 +80,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 1rem;
+        margin-right: 0.5rem;
         width: 4rem;
         height: 2.5rem;
         border-radius: 1.25rem;
@@ -73,5 +93,23 @@
     &__text {
         margin-bottom: 0;
         padding-right: 1rem;
+    }
+
+    @include tablet {
+        &:first-of-type {
+            margin-top: 0;
+        }
+
+        &__header {
+            background-color: transparent;
+        }
+
+        &__number {
+            margin-right: 1.5rem;
+        }
+
+        &__text {
+            padding-left: 5.5rem;
+        }
     }
 }
