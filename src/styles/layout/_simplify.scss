@@ -27,4 +27,20 @@
             color: $grayish-orange;
         }
     }
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 15rem;
+        box-sizing: border-box;
+        padding: 0 2rem;
+        background-image: url("/src/assets/bg-simplify-section-desktop.svg");
+        background-position: calc(50% + 20rem) -7rem;
+
+        &__heading {
+            text-align: left;
+            width: 30rem;
+            margin: 0;
+        }
+    }
 }
