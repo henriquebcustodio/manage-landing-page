@@ -2,6 +2,7 @@ const common = require("./webpack.common");
 const { merge } = require("webpack-merge");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 const path = require("path");
 
 module.exports = merge(common, {
@@ -10,6 +11,19 @@ module.exports = merge(common, {
         filename: "[name].[contenthash].js",
         path: path.resolve(__dirname, "dist"),
         clean: true
+    },
+    optimization: {
+        minimize: true,
+        minimizer: [
+            new TerserPlugin({
+                terserOptions: {
+                    format: {
+                        comments: false
+                    },
+                },
+                extractComments: false
+            })
+        ]
     },
     plugins: [
         new MiniCssExtractPlugin({
