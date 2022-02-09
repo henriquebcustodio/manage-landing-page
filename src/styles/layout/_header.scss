@@ -1,11 +1,16 @@
 .header {
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
     box-sizing: border-box;
     padding: 3rem 1.7rem;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 71rem;
+        margin: auto;
+    }
 
     &::before {
         content: "";

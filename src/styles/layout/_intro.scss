@@ -3,8 +3,10 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    max-width: 75rem;
     box-sizing: border-box;
     padding: 0 1rem;
+    margin: auto;
 
     &__image {
         width: 100%;
@@ -15,6 +17,12 @@
     @include tablet {
         flex-direction: row-reverse;
         justify-content: space-between;
+    }
+
+    @include desktop {
+        &__image {
+            max-width: 35rem;
+        }
     }
 }
 
@@ -45,5 +53,9 @@
         &__text {
             text-align: left;
         }
+    }
+
+    @include desktop {
+        max-width: 30rem;
     }
 }
