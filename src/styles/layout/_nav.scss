@@ -28,6 +28,24 @@
             margin-bottom: 0;
         }
     }
+
+    @include desktop {
+        display: flex;
+        position: relative;
+        padding: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        border-radius: 0;
+        z-index: 0;
+        background-color: transparent;
+        color: $dark-grayish-blue;
+
+        &__link {
+            margin: 0 1rem;
+            font-weight: 400;
+        }
+    }
 }
 
 .logo {

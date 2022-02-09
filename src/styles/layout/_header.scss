@@ -42,4 +42,22 @@
             display: block;
         }
     }
+
+    &__get-started {
+        display: none;
+    }
+
+    @include desktop {
+        &__open-nav {
+            display: none;
+        }
+
+        &__close-nav {
+            display: none;
+        }
+
+        &__get-started {
+            display: inline;
+        }
+    }
 }
